@@ -15,3 +15,8 @@ var masyvas = [
 
 // Attempt nr3
 
+for ( var i = 0; i < masyvas.length; i++ ){
+    var greitis = Math.round(masyvas[i][2] / masyvas[i][3])*3.6
+    console.log(greitis)
+}
+
