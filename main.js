@@ -27,6 +27,15 @@ for ( var i = 0; i < masyvas.length; i++ ){
 
 for ( var i = 0; i < masyvas.length; i++) {
     // kuriame tr
-    var tr = document.createElement('tr')
-    console.log(tr)
+    var tr = document.createElement('tr');
+    for ( var j = 0; j < masyvas[i].length; j++) {
+        // kuriame td 
+        var td = document.createElement('td');
+        // sukeliame info i td
+        td.innerText = masyvas[i][j];
+        // dedame td i tr 
+        tr.appendChild(td);
+    }
+    // dedame tr i tbody 
+    tbody.appendChild(tr);
 }
