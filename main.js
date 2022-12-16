@@ -15,8 +15,18 @@ var masyvas = [
 
 // Attempt nr3
 
+var tbody = document.querySelector('tbody');
+
 for ( var i = 0; i < masyvas.length; i++ ){
-    var greitis = Math.round(masyvas[i][2] / masyvas[i][3])*3.6
-    console.log(greitis)
+    // skaiciuojam greiti
+    var greitis = Math.round((masyvas[i][2] / masyvas[i][3])*3.6);
+    // dedam greiti i masyva
+    masyvas[i].push(greitis);
 }
 
+
+for ( var i = 0; i < masyvas.length; i++) {
+    // kuriame tr
+    var tr = document.createElement('tr')
+    console.log(tr)
+}
